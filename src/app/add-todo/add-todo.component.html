@@ -1,0 +1,16 @@
+<div>
+  <input
+    type="text"
+    [(ngModel)]="newTodo"
+    placeholder="Enter Todo"
+    class="add-todo-input"
+  />
+  <button (click)="addTodo()">Add Todo</button>
+</div>
+
+<hr />
+<h2><b>Parent to child data </b></h2>
+<p>
+  Today's item: <b>{{ item }}</b>
+</p>
+<p *ngIf="tempView">Template Data is {{ value }}</p>

@@ -1,0 +1,27 @@
+<div class="todo-list">
+  <h2 class="todo-list__title">Todo List</h2>
+  <ul class="todo-list__items">
+    <li class="todo-list__item" *ngFor="let todo of todos">{{ todo }}</li>
+  </ul>
+  <app-add-todo
+    class="todo-list__add-todo"
+    [item]="currentItem"
+    (todoAdded)="addTodo($event)"
+    #templateFunctionAceess
+  ></app-add-todo>
+  <hr class="todo-list__separator" />
+  <b class="todo-list__label">Template variable accessing child properties</b>
+  <button
+    class="todo-list__button"
+    (click)="templateFunctionAceess.templateFunction()"
+  >
+    Click me
+  </button>
+</div>
+<p>Using Of Ng IF :</p>
+<button class="todo-list__button" (click)="toggle()">Toggle</button>
+<div *ngIf="user === 'admin'" class="admin-view">
+  <div>
+    <h1>ADMIN VIEW</h1>
+  </div>
+</div>

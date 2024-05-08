@@ -1,0 +1,22 @@
+.add-todo-input {
+  width: 60%;
+  height: 40px;
+  border-radius: 12px;
+}
+button {
+  margin-left: 10px;
+  font-family: monospace;
+  background-color: aqua;
+  color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
